@@ -1,0 +1,9 @@
+apps:
+  - script: ./server/server.js
+    name: vue-todo
+    instances: 2
+    exec_mode: cluster
+    env_production:
+      NODE_ENV: production
+      HOST: localhost
+      PORT: 8888
