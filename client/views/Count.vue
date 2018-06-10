@@ -20,7 +20,7 @@
     name: 'count',
     computed: {
       ...mapState(['count']),
-      ...mapGetters['count100']
+      ...mapGetters(['count100'])
     },
     methods: {
       ...mapMutations(['plus', 'minus']),

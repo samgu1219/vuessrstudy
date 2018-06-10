@@ -1,19 +1,26 @@
-import Todo from '../views/todo/Todo'
+/* import Todo from '../views/todo/Todo'
 import Hi from '../views/Hi'
-import Count from '../views/Count'
+import Count from '../views/Count' */
 
 const routes = [
   {
     path: '/',
-    component: Todo
+    redirect: '/app'
+  },
+  {
+    path: '/app',
+    component: () => import(/* webpackChunkName:'todo' */'../views/todo/Todo')
+    // component: Todo
   },
   {
     path: '/hi',
-    component: Hi
+    component: () => import(/* webpackChunkName:'hi' */'../views/Hi')
+    // component: Hi
   },
   {
     path: '/count',
-    component: Count
+    component: () => import(/* webpackChunkName:'count' */'../views/Count')
+    // component: Count
   }
 ]
 

@@ -73,7 +73,7 @@ if(isDev) {
     output:{
       filename:'js/[name].[chunkHash:8].js',
       path:path.join(__dirname,'../dist/public'),
-      publicPath:`${cdnConfig.cdn.host}/public`
+      // publicPath:`${cdnConfig.cdn.host}/public/`
     },
     module:{
       rules:[{
