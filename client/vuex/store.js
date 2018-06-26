@@ -7,7 +7,7 @@ const state = {
 }
 
 const getters = {
-  count100: state => state + 100
+  count100: state => state.count + 100
 }
 
 const mutations = {

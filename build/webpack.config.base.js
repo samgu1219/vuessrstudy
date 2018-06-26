@@ -11,7 +11,7 @@ const config = {
   output:{
     filename:'js/bundle.js',
     path:path.join(__dirname,'../dist'),
-    // publicPath: "http://127.0.0.1:8000/"
+    publicPath: "http://127.0.0.1:8000/"
   },
   module:{
     rules:[

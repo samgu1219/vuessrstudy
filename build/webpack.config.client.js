@@ -13,6 +13,9 @@ const devServer = {
   port:8000,
   open:true,
   hot:true,
+  historyApiFallback:{
+    'index':'/index.html'
+  },
   headers:{'Access-Control-Allow-Origin':'*'},
   proxy: {
     '/api':'http://127.0.0.1:3333/'
