@@ -68,7 +68,7 @@ const bundleSSR = async(ctx)=>{
     'utf-8'
   );
 
-  const renderer = VueServerRender.createBundleRenderer(bundle,{
+  const renderer = VueServerRender.createRenderer({
     inject:false,
     clientManifest
   })
